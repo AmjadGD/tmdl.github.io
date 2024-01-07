@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+    cursor: none;
+}
+body{
+    background: white;
+    overflow-x: hidden;
+}
+
+.followDiv {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 100%;
+    z-index: 2000;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+.followCursor{
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 100%;
+    z-index: 1500;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.header{
+    position: sticky;
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+}
+
+.header .header-left-side{
+    width: calc(100dvw / 2);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.header .header-left-side .logo{
+    margin-right: 50px;
+}
+.header .header-left-side .logo img{
+    position: relative;
+    top: 3px;
+}
+.header .header-left-side .services-items a{
+    color: #222831;
+    text-decoration: none;
+    margin-right: 20px ;
+}
+.header .header-left-side .services-items a i{
+    top: 10px;
+}
+.header .header-left-side .services-items a:hover{
+    text-decoration: underline;
+}
+
+.header .header-right-side{
+    width: calc(100dvw / 2);
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header .header-right-side .nav-items a{
+    text-decoration: none;
+    color: #222831;
+    margin-left: 20px;
+}
+.header .header-right-side .nav-items a:hover{
+    text-decoration: underline;
+}
+
+.wrapper-1{
+    position: relative;
+    width: 100dvw;
+    height: calc(100dvh - 70px);
+}
+.wrapper-1 .main-text{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wrapper-1 .main-text h1{
+    position: relative;
+    color: #15191f;
+    font-size: 4em;
+    font-family: 'Clash Grotesk', sans-serif;
+}
+.wrapper-1 .main-text h3{
+    font-size: 1.4em;
+    color: rgb(58, 58, 58);
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+.wrapper-1 .main-text h2{
+    display: inline;
+    font-size: 3em;
+    font-family: 'Clash Grotesk', sans-serif;
+    color: #15191f;
+    font-weight: 800;
+}
+.wrapper-1 .main-text .highlighted-text-1{
+    color: #f5708d;
+}
+
+.wrapper-2{
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+.wrapper-2 .inner-wrapper-2{
+    position: absolute;
+    height: calc(100dvh - 100px);
+    width: 85%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper-2 .inner-wrapper-2 .wrapper-2-text{
+    width: 60%;
+    font-size: 1.7em;
+    line-height: 40px;
+    font-family: 'Clash Grotesk', sans-serif;
+    color: #15191f;
+}
+.wrapper-2 .inner-wrapper-2 .wrapper-2-image{
+    margin-left: 60px;
+    z-index: 10;
+}
+.wrapper-2 .inner-wrapper-2 .sparkles-1{
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    z-index: -1;
+}
+.wrapper-2 .inner-wrapper-2 .sparkles-2{
+    position: absolute;
+    left: 60%;
+    top: 70%;
+    z-index: -1;
+}
+
+.wrapper-3{
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+}
+.wrapper-3 .inner-wrapper-3{
+    position: absolute;
+    height: calc(100dvh - 100px);
+    width: 85%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper-3 .inner-wrapper-3 .wrapper-3-image{
+    margin-right: 60px;
+    z-index: 10;
+}
+.wrapper-3 .inner-wrapper-3 .wrapper-3-text{
+    width: 60%;
+    font-size: 1.7em;
+    line-height: 40px;
+    font-family: 'Clash Grotesk', sans-serif;
+    color: #15191f;
+}
+.wrapper-3 .inner-wrapper-3 .sparkles-3{
+    position: absolute;
+    z-index: -1;
+    left: 60%;
+    top: 10%;
+}
+
+.wrapper-4{
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+.wrapper-4 .inner-wrapper-4{
+    position: absolute;
+    height: calc(100dvh - 100px);
+    width: 85%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper-4 .inner-wrapper-4 .wrapper-4-text{
+    width: 60%;
+    font-size: 1.7em;
+    line-height: 40px;
+    font-family: 'Clash Grotesk', sans-serif;
+    color: #15191f;
+}
+.wrapper-4 .inner-wrapper-4 .wrapper-4-image{
+    margin-left: 60px;
+    z-index: 10;
+}
+.wrapper-4 .inner-wrapper-4 .sparkles-5{
+    position: absolute;
+    left: 89%;
+    top: 60%;
+    z-index: -1;
+}
+.wrapper-4 .inner-wrapper-4 .sparkles-6{
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+}
+
+.wrapper-5{
+    position: relative;
+    width: 100dvw;
+    height: 100dvh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-5 .cards{
+    position: relative;
+    padding: 20px;
+    height: 300px;
+    width: 320px;
+    margin: 50px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0, 0, 0, 0.507);
+    top: -10%;
+}
+.wrapper-5 .cards p,
+.wrapper-5 .cards i{
+    position: relative;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.wrapper-5 .cards p{
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #15191f;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.wrapper-5 .cards i{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.062);
+    font-size: 10em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper-5 button{
+    position: absolute;
+    left: 50%;
+    top: 73%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 30%;
+    font-size: 1.4em;
+    font-weight: 800;
+    color: white;
+    background: #f5708d;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    transition: 0.2s ease-out;
+}
+.wrapper-5 button:hover{
+    width: calc(30% + 15px);
+    font-size: 1.5em;
+}
+
+.footer{
+    position: relative;
+    padding: 30px;
+    height: 100px;
+    background: #1b1b1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer p{
+    color: white;
+    font-size: 1.2em;
+}
